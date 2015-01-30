@@ -4,10 +4,17 @@ import (
 	"fmt"
 	"os"
 	"time"
+
+	"github.com/travis-repos/go-test-staging/a"
+	"github.com/travis-repos/go-test-staging/a/b"
+	"github.com/travis-repos/go-test-staging/a/b/c"
 )
 
 func main() {
 	sayHello()
+	fmt.Printf("%v\n", a.Apple)
+	fmt.Printf("%v\n", b.Banana)
+	fmt.Printf("%v\n", c.Carrot)
 	os.Exit(0)
 }
 
