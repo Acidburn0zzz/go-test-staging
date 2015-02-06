@@ -1,8 +1,6 @@
 language: go
 sudo: false
 go:
-- 'go1'
-- '1.4.1'
 - 'default'
 - 'master'
 gimme_config:
