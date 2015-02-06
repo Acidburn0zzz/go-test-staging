@@ -2,7 +2,7 @@ language: go
 sudo: false
 go:
 - 'default'
-- 'master'
+- '1.2'
 gimme_config:
   url: 'https://raw.githubusercontent.com/meatballhat/gimme/master/gimme'
 script: go test -v . ./a ./a/b ./a/b/c
