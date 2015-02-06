@@ -6,7 +6,7 @@ go:
 - 'default'
 - 'master'
 gimme_config:
-  url: "https://raw.githubusercontent.com/meatballhat/gimme/master/gimme' ; curl -sL -o ~/bin/gimme 'https://gist.githubusercontent.com/meatballhat/e2baf03f7ffae8047ccd/raw/f6d89b63eadb5faeeeed5b1bcd63c3fb60df3900/breakout.sh"
+  url: 'https://raw.githubusercontent.com/meatballhat/gimme/master/gimme'
   force_reinstall: true
 script: go test -v . ./a ./a/b ./a/b/c
 after_success: date -u > .just-testing
