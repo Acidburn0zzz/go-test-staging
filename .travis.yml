@@ -5,7 +5,6 @@ go:
 - 'master'
 gimme_config:
   url: 'https://raw.githubusercontent.com/meatballhat/gimme/master/gimme'
-  force_reinstall: true
 script: go test -v . ./a ./a/b ./a/b/c
 after_success: date -u > .just-testing
 addons:
