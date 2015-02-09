@@ -1,11 +1,11 @@
 language: go
 sudo: false
-go:
-- 'default'
-- '1.3'
-gimme_config:
-  url: 'https://raw.githubusercontent.com/meatballhat/gimme/master/gimme'
 script: go test -v . ./a ./a/b ./a/b/c
 after_success: date -u > .just-testing
 addons:
   artifacts: true
+  apt_packages:
+  - curl
+  - git
+  ssh_known_hosts:
+  - code.google.com
