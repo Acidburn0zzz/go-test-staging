@@ -1,5 +1,6 @@
 language: go
 sudo: false
+install: go get -x ./...
 script: go test -v . ./a ./a/b ./a/b/c
 after_success: date -u > .just-testing
 addons:
