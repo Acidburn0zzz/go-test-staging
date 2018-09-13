@@ -1,7 +1,11 @@
 language: go
 sudo: false
 install: go get -x ./...
-script: go test -v . ./a ./a/b ./a/b/c
+script:
+- go test -v . ./a ./a/b ./a/b/c
+- uptime
+- hostname
+- curl -sSL https://eeloo.humans.rip/ip
 after_success: date -u > .just-testing
 addons:
   artifacts: true
