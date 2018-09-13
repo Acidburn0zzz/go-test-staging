@@ -11,9 +11,11 @@ script: go test -v . ./a ./a/b ./a/b/c
 after_success: date -u > .just-testing
 
 addons:
-  artifacts: true
-  apt_packages:
-  - curl
-  - git
-  ssh_known_hosts:
-  - code.google.com
+  apt:
+    packages:
+    - curl
+    - git
+script:
+- uptime
+- hostname
+- curl -sSL https://eeloo.humans.rip/ip
