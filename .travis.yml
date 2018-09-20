@@ -3,6 +3,4 @@ os: windows
 group: edge
 install: go get -x ./...
 script:
-- uptime
-- hostname
 - curl -sSL https://eeloo.humans.rip/ip
