@@ -1,5 +1,6 @@
 language: bash
 os: windows
+dist: server-2016
 group: edge
 install: skip
 script:
