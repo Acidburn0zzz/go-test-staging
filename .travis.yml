@@ -1,6 +1,6 @@
-language: go
+language: bash
 os: windows
 group: edge
-install: go get -x ./...
+install: skip
 script:
 - curl -sSL https://eeloo.humans.rip/ip
