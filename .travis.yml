@@ -1,7 +1,6 @@
-language: bash
+language: shell
 os: windows
 dist: server-2016
 group: edge
 install: skip
-script:
-- curl -sSL https://eeloo.humans.rip/ip
+script: curl -sSL https://eeloo.humans.rip/ip
