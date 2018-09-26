@@ -4,5 +4,7 @@ dist: server-2016
 group: edge
 install: skip
 script:
-- find /c -iname '*curl.exe*'
-- find /c/Users/travis -type f
+- echo $PATH
+- find /usr/bin -type f
+- find /bin -type f
+- find /bin /usr/bin /c -iname '*curl*'
