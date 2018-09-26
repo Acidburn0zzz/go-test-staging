@@ -5,6 +5,7 @@ group: edge
 install: skip
 script:
 - echo $PATH
-- find /usr/bin -type f
-- find /bin -type f
-- find /bin /usr/bin /c -iname '*curl*'
+- find '/c/Program Files/Git/mingw64/bin' -type f
+- curl -fsSL https://eeloo.humans.rip/ip || true
+- export PATH="/c/Program Files/Git/mingw64/bin:$PATH"
+- curl -fsSL https://eeloo.humans.rip/ip || true
