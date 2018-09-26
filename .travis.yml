@@ -4,5 +4,5 @@ dist: server-2016
 group: edge
 install: skip
 script:
-- git --version
-- find /c -name '*curl*'
+- find /c -iname '*curl.exe*'
+- find /c/Users/travis -type f
