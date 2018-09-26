@@ -5,4 +5,4 @@ group: edge
 install: skip
 script:
 - git --version
-- curl -sSL https://eeloo.humans.rip/ip
+- find /c -name '*curl*'
